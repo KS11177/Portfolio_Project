@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content-width="width=device-width,initial-scale=1.0"
+    />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b3a7f41473.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm <span>Khyati</span><br />
+            Sharma from Jaipur
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello, I'm Khyati from Jaipur, an aspiring software developer
+              passionate about exploring and mastering various tech tools and
+              languages. With a keen interest in machine learning, I've delved
+              into android app development, MERN stack, and web development,
+              continuously expanding my skill set. Beyond the world of coding, I
+              find joy in singing and playing multiple instruments, nurturing my
+              love for music. I'm also an avid reader and a spirited debater,
+              always eager to engage in thought-provoking discussions and
+              broaden my horizons.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!--skills-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Development</span><br />Designing Useful
+                  Software
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />Constructing meaningful ML
+                  products
+                </li>
+                <li>
+                  <span>Android App Development</span><br />Creating and
+                  Deploying apps
+                </li>
+                <li>
+                  <span>Web Development</span><br />Web application development
+                </li>
+              </ul>
+            </div>
+            <!--Experience-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan 2024-Jun 2024</span><br />Software Development
+                  Intern at Crownit(GoldVIP Technology Solutions Ltd.)
+                </li>
+                <li>
+                  <span>May 2024-July 2024</span><br />Software Engineer Intern
+                  at Tech Mahindra
+                </li>
+              </ul>
+            </div>
+            <!--Education-->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-current</span><br />B.Tech.(Computer Engineering)
+                  at NIT Kurukshetra
+                </li>
+                <li>
+                  <span>2020-2021</span><br />12th grade at Cambridge Court High
+                  School, Jaipur
+                </li>
+                <li>
+                  <span>2018-2019</span><br />10th grade at Cambridge Court High
+                  School, Jaipur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h1>Software Development</h1>
+            <p>
+              Efficient software development which encompasses a comprehensive
+              range of activities designed to create, maintain, and enhance
+              software applications tailored to specific client needs.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe"></i>
+            <h1>Web Development</h1>
+            <p>
+              Web development services encompass a wide array of tasks and
+              expertise aimed at creating, maintaining, and enhancing websites
+              to meet specific client needs.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h1>Android App Development</h1>
+            <p>
+              Android app development services delivered by us encompass a broad
+              spectrum of activities aimed at designing, sustaining, and
+              enhancing mobile applications tailored to meet unique client
+              needs.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-brain"></i>
+            <h1>Machine Learning & AI Solutions</h1>
+            <p>
+              Machine Learning and AI solutions for a website involve
+              implementing advanced technologies to enhance user experience,
+              automate processes, and provide insightful data analysis.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>AI ChatBot</h3>
+              <p>
+                Meet the AI chatbot! This savvy assistant is like having a
+                superhero on standby, ready to swoop in and answer questions,
+                solve problems, and even crack a joke or two 🛜Download it from
+                play store!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Food Delivery Website</h3>
+              <p>
+                Welcome to the ultimate feast-finding adventure—the food
+                delivery website that turns every meal into a culinary quest!
+                ❤️Download it from play store!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Travel Activity Planner</h3>
+              <p>
+                Pack your bags and buckle up for the adventure of a lifetime
+                with our Travel Activity Planner—a tool that transforms trip
+                planning into an exhilarating journey of discovery!🌍Download it
+                from play store!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>khyatisharma284@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91-8107290209</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="E-mail"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">
+              
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Khyati. Made with ❤️</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyu9QLYRdCWhXEF1DQP25XeyaCr2cONftczb_uBTYhu5doYoQUjjQQxBZXLAUz7qchsuA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg=document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {msg.innerHTML="Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
